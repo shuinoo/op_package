@@ -36,7 +36,7 @@ GO_PKG_LDFLAGS_X:=$(CSFB_VERSION_PKG).Version=$(CSFB_BUILD_VERSION) \
 	$(CSFB_VERSION_PKG).GoVersion=$(CSFB_BUILD_GOVERSION)
 
 include $(INCLUDE_DIR)/package.mk
-include ../packages/lang/golang/golang-package.mk
+include ../../packages/lang/golang/golang-package.mk
 
 define Package/crowdsec-firewall-bouncer/Default
   SECTION:=net
